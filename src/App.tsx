@@ -51,7 +51,8 @@ function App() {
           <Footer />
         </div>
       )} />
-      <Route path="/seamless-transitions" element={<SeamlessTransitions />} />
+      <Route path="/vanmaraieditz" element={<Blog />} />
+      <Route path="/vanmaraieditz/seamless-transitions" element={<SeamlessTransitions />} />
       <Route path="/color-grading" element={<ColorGrading />} />
       <Route path="/future-of-video-editing" element={<FutureOfVideoEditing />} />
       {/* Add other routes as needed */}

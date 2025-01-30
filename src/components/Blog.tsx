@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 
 const posts = [
@@ -68,13 +69,13 @@ const Blog = () => {
                   {post.title}
                 </h3>
                 <p className="text-primary-700 mb-4">{post.excerpt}</p>
-                <a
-                  href={`/${post.slug}`}
+                <Link
+                  to={`/vanmaraieditz/${post.slug}`} // Update the base URL
                   className="inline-flex items-center text-primary-700 hover:text-primary-900 transition-colors group"
                 >
                   Read More
                   <ArrowRight className="ml-2 h-4 w-4 transform transition-transform group-hover:translate-x-1" />
-                </a>
+                </Link>
               </div>
             </article>
           ))}
