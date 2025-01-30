@@ -53,8 +53,8 @@ function App() {
       )} />
       <Route path="/vanmaraieditz" element={<Blog />} />
       <Route path="/vanmaraieditz/seamless-transitions" element={<SeamlessTransitions />} />
-      <Route path="/vanmaraieditz/color-grading" element={<ColorGrading />} /> {/* Update the base URL */}
-      <Route path="/vanmaraieditz/future-of-video-editing" element={<FutureOfVideoEditing />} /> {/* Update the base URL */}
+      <Route path="/vanmaraieditz/color-grading" element={<ColorGrading />} />
+      <Route path="/vanmaraieditz/future-of-video-editing" element={<FutureOfVideoEditing />} />
       {/* Add other routes as needed */}
     </Routes>
   );

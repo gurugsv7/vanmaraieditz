@@ -70,7 +70,7 @@ const Blog = () => {
                 </h3>
                 <p className="text-primary-700 mb-4">{post.excerpt}</p>
                 <Link
-                  to={`/vanmaraieditz/${post.slug}`} // Update the base URL
+                  to={`/vanmaraieditz/${post.slug}`} // Ensure the base URL is correct
                   className="inline-flex items-center text-primary-700 hover:text-primary-900 transition-colors group"
                 >
                   Read More
