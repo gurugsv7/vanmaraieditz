@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
               <Play className="h-8 w-8 text-primary-500" />
-              <span className="ml-2 text-xl font-bold">EditMaster</span>
+              <span className="ml-2 text-xl font-bold">VanmaraiEditz</span>
             </div>
             <p className="text-primary-500 mb-4">
               Professional video editing services that bring your vision to life.

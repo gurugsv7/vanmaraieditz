@@ -22,10 +22,10 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
         <div className="animate-fadeIn">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 lg:mb-4">
             Cutting to the Chase with Every Frame
           </h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90">
+          <p className="text-lg sm:text-2xl lg:text-3xl mb-6 sm:mb-10 lg:mb-8 opacity-90">
             Professional video editing that brings your vision to life
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
