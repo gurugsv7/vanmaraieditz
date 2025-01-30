@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Play } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -35,29 +35,27 @@ function App() {
   }
 
   return (
-    <BrowserRouter basename="/vanmaraieditz">
-      <Routes>
-        <Route path="/" element={(
-          <div className="min-h-screen bg-gray-50">
-            <Navbar />
-            <main>
-              <Hero />
-              <About />
-              <Portfolio />
-              <Services />
-              <Testimonials />
-              <Blog />
-              <Contact />
-            </main>
-            <Footer />
-          </div>
-        )} />
-        <Route path="/seamless-transitions" element={<SeamlessTransitions />} />
-        <Route path="/color-grading" element={<ColorGrading />} />
-        <Route path="/future-of-video-editing" element={<FutureOfVideoEditing />} />
-        {/* Add other routes as needed */}
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={(
+        <div className="min-h-screen bg-gray-50">
+          <Navbar />
+          <main>
+            <Hero />
+            <About />
+            <Portfolio />
+            <Services />
+            <Testimonials />
+            <Blog />
+            <Contact />
+          </main>
+          <Footer />
+        </div>
+      )} />
+      <Route path="/seamless-transitions" element={<SeamlessTransitions />} />
+      <Route path="/color-grading" element={<ColorGrading />} />
+      <Route path="/future-of-video-editing" element={<FutureOfVideoEditing />} />
+      {/* Add other routes as needed */}
+    </Routes>
   );
 }
 
