@@ -12,9 +12,6 @@ export default {
           900: '#003380',
         },
       },
-      backgroundColor: {
-        'about': '#111111', // Dark background for about section
-      },
       animation: {
         'gradient-x': 'gradient-x 15s ease infinite',
         'float': 'float 6s ease-in-out infinite',
