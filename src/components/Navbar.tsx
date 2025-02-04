@@ -46,7 +46,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
@@ -63,7 +62,14 @@ const Navbar = () => {
   );
 };
 
-const NavLink = ({ href, children, className = '', isScrolled }) => (
+interface NavLinkProps {
+  href: string;
+  children: React.ReactNode;
+  className?: string;
+  isScrolled: boolean;
+}
+
+const NavLink = ({ href, children, className = '', isScrolled }: NavLinkProps) => (
   <a
     href={href}
     className={`${isScrolled ? 'text-primary-900' : 'text-white'} hover:text-primary-700 transition-colors duration-200 ${className}`}
@@ -72,7 +78,7 @@ const NavLink = ({ href, children, className = '', isScrolled }) => (
   </a>
 );
 
-const MobileNavLink = ({ href, children }) => (
+const MobileNavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
   <a
     href={href}
     className="block px-3 py-2 rounded-md text-base font-medium text-primary-900 hover:text-primary-700 hover:bg-primary-100/50"

@@ -34,11 +34,14 @@ const posts = [
 
 const Blog = () => {
   return (
-    <section id="blog" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="blog" className="relative py-20 bg-gradient-to-b from-black to-primary-900/90">
+      <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary-900 mb-4">Latest Insights</h2>
-          <p className="text-lg text-primary-700">
+          <h2 className="text-4xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-300 to-white">
+            Latest Insights
+          </h2>
+          <p className="text-lg text-primary-300">
             Tips, trends, and thoughts on video editing and the media industry
           </p>
         </div>
@@ -47,34 +50,39 @@ const Blog = () => {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="group bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              className="group bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden 
+                         border border-white/10 hover:border-primary-500/50
+                         transform hover:-translate-y-1 transition-all duration-300"
             >
               <div className="relative h-48 overflow-hidden">
-                <div className="absolute inset-0 bg-primary-900/20 group-hover:bg-primary-900/0 transition-colors duration-300 z-10" />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary-900/90 group-hover:opacity-75 transition-opacity z-10" />
                 <img
                   src={post.image}
                   alt={post.title}
                   className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <div className="p-6 bg-gradient-to-b from-primary-100/10 to-white">
-                <div className="flex items-center text-sm text-primary-700 mb-4">
+              <div className="p-6 bg-gradient-to-b from-primary-900/50 to-transparent">
+                <div className="flex items-center text-sm text-primary-300 mb-4">
                   <Calendar className="w-4 h-4 mr-2" />
                   <time>{post.date}</time>
                   <span className="mx-2">•</span>
                   <Clock className="w-4 h-4 mr-2" />
                   <span>{post.readTime}</span>
                 </div>
-                <h3 className="text-xl font-bold text-primary-900 mb-2 group-hover:text-primary-700 transition-colors">
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary-300 transition-colors">
                   {post.title}
                 </h3>
-                <p className="text-primary-700 mb-4">{post.excerpt}</p>
+                <p className="text-primary-100/80 mb-4">{post.excerpt}</p>
                 <Link
-                  to={`/vanmaraieditz/${post.slug}`} // Ensure the base URL is correct
-                  className="inline-flex items-center text-primary-700 hover:text-primary-900 transition-colors group"
+                  to={`/vanmaraieditz/${post.slug}`}
+                  className="inline-flex items-center text-primary-300 hover:text-white transition-colors group/link"
                 >
-                  Read More
-                  <ArrowRight className="ml-2 h-4 w-4 transform transition-transform group-hover:translate-x-1" />
+                  <span className="relative">
+                    Read More
+                    <span className="absolute inset-x-0 -bottom-1 h-px bg-gradient-to-r from-transparent via-primary-500 to-transparent scale-x-0 group-hover/link:scale-x-100 transition-transform" />
+                  </span>
+                  <ArrowRight className="ml-2 h-4 w-4 transform transition-transform group-hover/link:translate-x-1" />
                 </Link>
               </div>
             </article>
