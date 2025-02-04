@@ -60,7 +60,7 @@ function App() {
     <VideoPreloadContext.Provider value={{ isVideoPreloaded, setIsVideoPreloaded }}>
       <Routes>
         <Route path="/" element={(
-          <div className="min-h-screen bg-gray-50">
+          <div className="min-h-screen">
             <Navbar />
             <main>
               <Hero />
