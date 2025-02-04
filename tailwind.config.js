@@ -9,9 +9,8 @@ export default {
           300: '#99C4FF',
           500: '#3388FF',
           700: '#0055CC',
-          900: '#000000', // Explicitly set to black
+          900: '#003380',
         },
-        about: '#111111', // Added about color
       },
       backgroundColor: {
         'about': '#111111', // Dark background for about section
