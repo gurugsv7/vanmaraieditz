@@ -9,7 +9,7 @@ export default {
           300: '#99C4FF',
           500: '#3388FF',
           700: '#0055CC',
-          900: '#000000', // Updated to black
+          900: '#000000', // Explicitly set to black
         },
         about: '#111111', // Added about color
       },
