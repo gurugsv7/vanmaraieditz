@@ -88,13 +88,13 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="relative py-20 bg-primary-900 overflow-hidden">
+    <section id="portfolio" className="relative py-20 bg-gray-900 overflow-hidden">
       {/* Gradient Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-950 to-primary-900" />
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 to-gray-900" />
       <div className="absolute inset-0">
-        <div className="absolute -left-1/4 -top-1/4 w-1/2 h-1/2 bg-gradient-to-br from-primary-500/30 to-transparent rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -right-1/4 -bottom-1/4 w-1/2 h-1/2 bg-gradient-to-tl from-primary-700/30 to-transparent rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute left-1/4 bottom-1/4 w-1/3 h-1/3 bg-gradient-to-tr from-primary-600/20 to-transparent rounded-full blur-2xl animate-pulse delay-500" />
+        <div className="absolute -left-1/4 -top-1/4 w-1/2 h-1/2 bg-gradient-to-br from-gray-500/30 to-transparent rounded-full blur-3xl animate-pulse" />
+        <div className="absolute -right-1/4 -bottom-1/4 w-1/2 h-1/2 bg-gradient-to-tl from-gray-700/30 to-transparent rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute left-1/4 bottom-1/4 w-1/3 h-1/3 bg-gradient-to-tr from-gray-600/20 to-transparent rounded-full blur-2xl animate-pulse delay-500" />
       </div>
       
       {/* Grid Pattern Overlay */}
@@ -103,12 +103,12 @@ const Portfolio = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4 relative inline-block">
-            <span className="absolute -left-6 -top-6 w-12 h-12 bg-gradient-to-br from-primary-500/50 to-transparent rounded-full blur-xl animate-pulse" />
+            <span className="absolute -left-6 -top-6 w-12 h-12 bg-gradient-to-br from-gray-500/50 to-transparent rounded-full blur-xl animate-pulse" />
             Featured Work
           </h2>
-          <p className="text-lg text-primary-400 max-w-2xl mx-auto relative">
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto relative">
             A selection of my best video editing projects
-            <span className="absolute -right-6 -bottom-6 w-12 h-12 bg-gradient-to-tl from-primary-700/50 to-transparent rounded-full blur-xl animate-pulse delay-300" />
+            <span className="absolute -right-6 -bottom-6 w-12 h-12 bg-gradient-to-tl from-gray-700/50 to-transparent rounded-full blur-xl animate-pulse delay-300" />
           </p>
         </div>
 
@@ -140,10 +140,10 @@ const Portfolio = () => {
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
               ></iframe>
-              <div className="absolute bottom-0 left-0 right-0 p-6 z-30 bg-gradient-to-t from-primary-900/90 to-transparent">
-                <p className="text-primary-400 text-sm uppercase tracking-wider mb-2">{projects.featured.category}</p>
+              <div className="absolute bottom-0 left-0 right-0 p-6 z-30 bg-gradient-to-t from-gray-900/90 to-transparent">
+                <p className="text-gray-400 text-sm uppercase tracking-wider mb-2">{projects.featured.category}</p>
                 <h3 className="text-white font-bold text-2xl mb-2">{projects.featured.title}</h3>
-                <p className="text-primary-300">{projects.featured.description}</p>
+                <p className="text-gray-300">{projects.featured.description}</p>
               </div>
             </div>
           </div>
@@ -162,13 +162,13 @@ const Portfolio = () => {
                     alt={project.title}
                     className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-primary-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 z-30 bg-gradient-to-t from-primary-900/90 to-transparent">
-                    <p className="text-primary-400 text-sm uppercase tracking-wider mb-2">{project.category}</p>
-                    <h3 className="text-white font-bold text-xl mb-2 group-hover:text-primary-400 transition-colors">
+                  <div className="absolute inset-0 bg-gray-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 z-30 bg-gradient-to-t from-gray-900/90 to-transparent">
+                    <p className="text-gray-400 text-sm uppercase tracking-wider mb-2">{project.category}</p>
+                    <h3 className="text-white font-bold text-xl mb-2 group-hover:text-gray-400 transition-colors">
                       {project.title}
                     </h3>
-                    <p className="text-primary-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       {project.description}
                     </p>
                   </div>
@@ -182,10 +182,10 @@ const Portfolio = () => {
       {/* Image Modal */}
       {selectedImage && (
         <div className="fixed inset-0 z-50 overflow-y-auto backdrop-blur-sm">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-950/95 via-primary-900/95 to-primary-950/95" />
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-950/95 via-gray-900/95 to-gray-950/95" />
           <div className="flex items-center justify-center min-h-screen px-4 py-6 sm:p-0">
             <div className="fixed inset-0 transition-opacity" onClick={() => setSelectedImage(null)}>
-              <div className="absolute inset-0 bg-primary-900/90 backdrop-blur-sm"></div>
+              <div className="absolute inset-0 bg-gray-900/90 backdrop-blur-sm"></div>
             </div>
 
             <div className="relative bg-white rounded-xl overflow-hidden shadow-2xl transform transition-all w-full max-w-4xl mx-auto">
@@ -208,12 +208,12 @@ const Portfolio = () => {
                 </div>
 
                 <div className="p-6 sm:p-8">
-                  <h3 className="text-2xl font-bold text-primary-900 mb-3">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     {selectedImage.title}
                   </h3>
-                  <p className="text-primary-700 mb-6">{selectedImage.description}</p>
-                  <div className="inline-block bg-primary-100 px-3 py-1 rounded-full">
-                    <span className="text-primary-700">{selectedImage.category}</span>
+                  <p className="text-gray-700 mb-6">{selectedImage.description}</p>
+                  <div className="inline-block bg-gray-100 px-3 py-1 rounded-full">
+                    <span className="text-gray-700">{selectedImage.category}</span>
                   </div>
                 </div>
               </div>
