@@ -43,7 +43,7 @@ const Services = () => {
           {services.map(({ icon: Icon, title, description, rate }) => (
             <div
               key={title}
-              className="bg-primary-100/20 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
+              className="bg-gray-100 border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
             >
               <Icon className="h-12 w-12 text-primary-700 mb-4" />
               <h3 className="text-xl font-bold text-primary-900 mb-2">{title}</h3>

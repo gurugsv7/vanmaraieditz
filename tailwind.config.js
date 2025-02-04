@@ -11,7 +11,7 @@ export default {
           400: '#66A6E6',
           500: '#3388DE',
           600: '#1A6BC7',
-          700: '#145399',
+          700: '#374151',  // Changed to match the default gray color
           800: '#0E3B6C',
           900: '#07233E',
         },

@@ -23,7 +23,7 @@ const About = () => {
               </h2>
               <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-primary-900 to-primary-700" />
             </div>
-            <p className="text-lg text-primary-700 mb-8">
+            <p className="text-lg text-gray-700 mb-8">
               With over 8 years of experience in video editing, I've had the privilege of working
               with leading brands and creative minds across the globe. My passion lies in
               transforming raw footage into compelling narratives that captivate audiences
