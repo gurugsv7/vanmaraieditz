@@ -75,15 +75,15 @@ const Blog = () => {
                 </h3>
                 <p className="text-primary-100/80 mb-4">{post.excerpt}</p>
                 <Link
-                  to={`/vanmaraieditz/${post.slug}`}
-                  className="inline-flex items-center text-primary-300 hover:text-white transition-colors group/link"
-                >
-                  <span className="relative">
-                    Read More
-                    <span className="absolute inset-x-0 -bottom-1 h-px bg-gradient-to-r from-transparent via-primary-500 to-transparent scale-x-0 group-hover/link:scale-x-100 transition-transform" />
-                  </span>
-                  <ArrowRight className="ml-2 h-4 w-4 transform transition-transform group-hover/link:translate-x-1" />
-                </Link>
+  to={`/blog/${post.slug}`} // Remove 'vanmaraieditz/' prefix
+  className="inline-flex items-center text-primary-300 hover:text-white transition-colors group/link"
+>
+  <span className="relative">
+    Read More
+    <span className="absolute inset-x-0 -bottom-1 h-px bg-gradient-to-r from-transparent via-primary-500 to-transparent scale-x-0 group-hover/link:scale-x-100 transition-transform" />
+  </span>
+  <ArrowRight className="ml-2 h-4 w-4 transform transition-transform group-hover/link:translate-x-1" />
+</Link>
               </div>
             </article>
           ))}
