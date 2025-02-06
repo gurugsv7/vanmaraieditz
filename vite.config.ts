@@ -4,9 +4,11 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/vanmaraieditz/',
+  base: '/', // Change this from '/vanmaraieditz/' to '/'
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true
   },
   optimizeDeps: {
     exclude: ['lucide-react'],
