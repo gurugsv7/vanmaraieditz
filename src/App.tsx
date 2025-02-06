@@ -68,10 +68,10 @@ function App() {
             <Footer />
           </div>
         )} />
-        <Route path="/vanmaraieditz" element={<Blog />} />
-        <Route path="/vanmaraieditz/seamless-transitions" element={<SeamlessTransitions />} />
-        <Route path="/vanmaraieditz/color-grading" element={<ColorGrading />} />
-        <Route path="/vanmaraieditz/future-of-video-editing" element={<FutureOfVideoEditing />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/seamless-transitions" element={<SeamlessTransitions />} />
+        <Route path="/blog/color-grading" element={<ColorGrading />} />
+        <Route path="/blog/future-of-video-editing" element={<FutureOfVideoEditing />} />
         {/* Add other routes as needed */}
       </Routes>
     </VideoPreloadContext.Provider>
