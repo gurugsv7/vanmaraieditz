@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useContext } from 'react';
 import { X, Volume2, VolumeX, Loader, Play } from 'lucide-react';
-import { VideoPreloadContext } from '../App';
+import { VideoPreloadContext } from '../context/VideoPreloadContext';  // Updated import path
 
 const projects = {
   featured: {

@@ -1,23 +1,18 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Play } from 'lucide-react';
+import { VideoPreloadContext } from './context/VideoPreloadContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Services from './components/Services';
-import Testimonials from './components/Testimonials';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SeamlessTransitions from './components/SeamlessTransitions';
 import ColorGrading from './components/blog/ColorGrading';
 import FutureOfVideoEditing from './components/blog/FutureOfVideoEditing';
-
-export const VideoPreloadContext = createContext({
-  isVideoPreloaded: false,
-  setIsVideoPreloaded: (value: boolean) => {}
-});
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -67,7 +62,6 @@ function App() {
               <About />
               <Portfolio />
               <Services />
-              <Testimonials />
               <Blog />
               <Contact />
             </main>

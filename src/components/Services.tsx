@@ -1,30 +1,24 @@
 import React from 'react';
-import { Video, Film, Camera, Tv } from 'lucide-react';
+import { Video, Youtube, Image, Film } from 'lucide-react';
 
 const services = [
   {
     icon: Film,
-    title: 'Film Editing',
-    description: 'Professional film editing with a focus on storytelling and pacing.',
-    rate: '₹6000-9000/hour'
+    title: 'Reel Editing',
+    description: 'Creative and engaging reel editing for Instagram, Facebook, and other social platforms.',
+    rate: '₹2000-4000/reel'
   },
   {
-    icon: Video,
-    title: 'Commercial Editing',
-    description: 'Quick-turnaround editing for advertisements and marketing content.',
-    rate: '₹5500-7500/hour'
+    icon: Youtube,
+    title: 'YouTube Video Editing',
+    description: 'Professional YouTube video editing with engaging cuts, effects, and optimized pacing.',
+    rate: '₹5000-8000/video'
   },
   {
-    icon: Camera,
-    title: 'Event Video Editing',
-    description: 'Comprehensive editing for weddings, conferences, and special events.',
-    rate: '₹5000-7000/hour'
-  },
-  {
-    icon: Tv,
-    title: 'Corporate Video Editing',
-    description: 'Professional editing for corporate communications and training materials.',
-    rate: '₹5200-7100/hour'
+    icon: Image,
+    title: 'Thumbnail Designing',
+    description: 'Eye-catching thumbnail designs that drive clicks and engagement for your content.',
+    rate: '₹1000-2000/thumbnail'
   }
 ];
 
@@ -39,7 +33,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {services.map(({ icon: Icon, title, description, rate }) => (
             <div
               key={title}
