@@ -54,7 +54,7 @@ function App() {
   return (
     <VideoPreloadContext.Provider value={{ isVideoPreloaded, setIsVideoPreloaded }}>
       <Routes>
-        <Route path="/" element={(
+        <Route path="/vanmaraieditz/" element={(
           <div className="min-h-screen bg-gray-50">
             <Navbar />
             <main>
@@ -68,10 +68,10 @@ function App() {
             <Footer />
           </div>
         )} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/seamless-transitions" element={<SeamlessTransitions />} />
-        <Route path="/blog/color-grading" element={<ColorGrading />} />
-        <Route path="/blog/future-of-video-editing" element={<FutureOfVideoEditing />} />
+        <Route path="/vanmaraieditz/blog" element={<Blog />} />
+        <Route path="/vanmaraieditz/blog/seamless-transitions" element={<SeamlessTransitions />} />
+        <Route path="/vanmaraieditz/blog/color-grading" element={<ColorGrading />} />
+        <Route path="/vanmaraieditz/blog/future-of-video-editing" element={<FutureOfVideoEditing />} />
         {/* Add other routes as needed */}
       </Routes>
     </VideoPreloadContext.Provider>
