@@ -10,7 +10,7 @@ import Services from './components/Services';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import SeamlessTransitions from './components/SeamlessTransitions';
+import SeamlessTransitions from './components/blog/SeamlessTransitions';
 import ColorGrading from './components/blog/ColorGrading';
 import FutureOfVideoEditing from './components/blog/FutureOfVideoEditing';
 
@@ -54,26 +54,25 @@ function App() {
   return (
     <VideoPreloadContext.Provider value={{ isVideoPreloaded, setIsVideoPreloaded }}>
       <Routes>
-        <Route path="/" element={(
-          <div className="min-h-screen bg-gray-50">
-            <Navbar />
-            <main>
-              <Hero />
-              <About />
-              <Portfolio />
-              <Services />
-              <Blog />
-              <Contact />
-            </main>
-            <Footer />
-          </div>
-        )} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/seamless-transitions" element={<SeamlessTransitions />} />
-        <Route path="/blog/color-grading" element={<ColorGrading />} />
-        <Route path="/blog/future-of-video-editing" element={<FutureOfVideoEditing />} />
-        {/* Add other routes as needed */}
-      </Routes>
+  <Route path="/" element={(
+    <div className="min-h-screen bg-gray-50">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Portfolio />
+        <Services />
+        <Blog />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  )} />
+  <Route path="/blog" element={<Blog />} />
+  <Route path="/blog/seamless-transitions" element={<SeamlessTransitions />} />
+  <Route path="/blog/color-grading" element={<ColorGrading />} />
+  <Route path="/blog/future-of-video-editing" element={<FutureOfVideoEditing />} />
+</Routes>
     </VideoPreloadContext.Provider>
   );
 }
